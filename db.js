@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+
 const connectDb = async () => {
     try{ 
         await mongoose.connect(process.env.ATLAS_URI)
@@ -8,7 +9,6 @@ const connectDb = async () => {
         console.log(error)
     }
 }
-// let db = connectDb.db("sample_training")
 
 export default connectDb;
 
