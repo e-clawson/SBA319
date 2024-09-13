@@ -1,10 +1,20 @@
 import express from 'express';
+import connectDb from "./db.js"
+import { ObjectId } from 'mongodb';
+
 const app = express();
 const port = 3000;
 
+app.use(express.json())
 
 app.get('/', async (req,res) => {
-    res.send("he")
+    try {
+        let collection = await connectDb.collection("posts")
+        let results = await collection.find({}).limit(10).toArray()
+        res.json(results).status(200)
+    } catch (error) {
+        res.json(error).status(400)
+    }
 })
 
 app.listen(port, () => {
