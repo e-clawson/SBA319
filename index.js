@@ -1,9 +1,9 @@
 import express from 'express';
 const app = express();
-const port = 8080;
+const port = 3000;
 
 app.get('/', async (req,res) => {
-    res.send("hello!")
+    res.send("he")
 })
 
 app.listen(port, () => {
