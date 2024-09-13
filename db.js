@@ -8,6 +8,7 @@ const connectDb = async () => {
         console.log(error)
     }
 }
+let db = conn.db("sample_training")
 
 export default connectDb;
 
