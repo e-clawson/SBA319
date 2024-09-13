@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const postSchema = new mongoose.Schema({ //this is the new model we made for grades
+const postSchema = new mongoose.Schema({
     body: {
         type: String, 
         required: true,

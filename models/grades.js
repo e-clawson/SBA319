@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const gradeSchema = new mongoose.Schema({ //this is the new model we made for grades
+const gradeSchema = new mongoose.Schema({ 
     scores: [],
     class_id: {
         type: Number, 

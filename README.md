@@ -46,7 +46,7 @@ Note: this may be accomplished in a number of ways. If you choose to perform thi
     Note: Double-check this requirement before submission. Testing your delete routes may leave you under the requirement. To be safe, populate your collections with sample data well above the requirement (we recommend 10-20 documents). (5%)
 
 - Utilize reasonable code organization practices. (5%)
-
+    done
 - Ensure that the program runs without errors (comment out things that do not work, and explain your blockers - you can still receive partial credit). (10%)
 
 - Commit frequently to the git repository. (5%)
