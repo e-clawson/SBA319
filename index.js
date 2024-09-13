@@ -1,26 +1,38 @@
 import express from 'express';
-// import mongoose from 'mongoose';
-// import 'dotenv/config'
+import 'dotenv/config'
 import connectDb from "./db.js"
-import { ObjectId } from 'mongodb';
+
 
 import Grade from "./models/grades.js"
-import { connect } from 'mongoose';
+
 const app = express();
 const port = 3000;
 
 app.use(express.json())
 
-// await mongoose.connect(process.env.ATLAS_URI);
+app.get('/', async (req, res) => {
+    const results = await Grade.find({ class_id: 300 }).limit(5)
+    res.send(results)
+    console.log(results)
+})
 
-app.get('/', async (req,res) => {
-    let result = await Grade.find({ class_id: 311 });
+//Grade Routes 
+app.post('/', async (req, res) => {
+    const gradeDoc = new Grade({
+        scores: [],
+        class_id: req.body.class_id,
+        learner_id: req.body.learner_id,
+    })
+    const result =  await gradeDoc.save();
+    console.log(result)
     res.send(result)
 })
 
-app.use((err, _req, res, next) => {
-    res.status(500).send("Something isn't working");
-  });
+// app.get('/:class_id', async (req, res) => {
+//     const result = await Grade.find({ class_id: 300 }).limit(5)
+//     res.send(result)
+//     console.log(result)
+// })
 
 app.listen(port, () => {
     console.log(`server is listening on port: ${port}`);

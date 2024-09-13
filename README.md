@@ -23,8 +23,11 @@ your submission should include - A link to the GitHub repository for your projec
 
 # Requirements 
 - Use at least three different data collections within the database (such as users, posts, or comments).(5%)
-
+    - companies 
+    - posts 
+    - grades
 - Utilize reasonable data modeling practices. (10%)
+    - done 
 
 - Create GET routes for all data that should be exposed to the client, using appropriate query commands to retrieve the data from the database. (10%)
 
@@ -40,16 +43,17 @@ your submission should include - A link to the GitHub repository for your projec
 Note: this may be accomplished in a number of ways. If you choose to perform this task outside of your application's code, you must include a way to test the validation within the application's routes. This can be as simple as providing a POST route that attempts to create an invalid document and displays the resulting error. (5%)
 
 - Populate your application's collections with sample data illustrating the use case of the collections. You must include at least five sample documents per collection.
-Note: Double-check this requirement before submission. Testing your delete routes may leave you under the requirement. To be safe, populate your collections with sample data well above the requirement (we recommend 10-20 documents). (5%)
+    Note: Double-check this requirement before submission. Testing your delete routes may leave you under the requirement. To be safe, populate your collections with sample data well above the requirement (we recommend 10-20 documents). (5%)
 
 - Utilize reasonable code organization practices. (5%)
 
 - Ensure that the program runs without errors (comment out things that do not work, and explain your blockers - you can still receive partial credit). (10%)
 
 - Commit frequently to the git repository. (5%)
-
+    - done 
 - Include a README file that contains a description of your application.
 This README must include a description of your API's available routes and their corresponding CRUD operations for reference. (5%)
+    - done 
 
 - Level of effort displayed in creativity and user experience. (5%)
 

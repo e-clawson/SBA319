@@ -5,6 +5,7 @@ const gradeSchema = new mongoose.Schema({ //this is the new model we made for gr
     class_id: {
         type: Number, 
         required: true,
+        cast: false,
     },
     learner_id:{ 
         type: Number, 
@@ -12,4 +13,4 @@ const gradeSchema = new mongoose.Schema({ //this is the new model we made for gr
     },
 })
 
-export default mongoose.model('grades', gradeSchema); 
+export default mongoose.model('grades', gradeSchema) 
