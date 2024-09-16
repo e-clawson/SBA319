@@ -9,10 +9,6 @@ const companySchema = new mongoose.Schema({
         type: String, 
         required: true,
     },
-    category_code:{ 
-        type: String, 
-        required: true,
-    },
     number_of_employees:{ 
         type: Number, 
         required: true,

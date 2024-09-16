@@ -42,7 +42,7 @@ your submission should include - A link to the GitHub repository for your projec
 - Include sensible MongoDB data validation rules for at least one data collection.
 Note: this may be accomplished in a number of ways. If you choose to perform this task outside of your application's code, you must include a way to test the validation within the application's routes. This can be as simple as providing a POST route that attempts to create an invalid document and displays the resulting error. (5%)
 
-- Populate your application's collections with sample data illustrating the use case of the collections. You must include at least five sample documents per collection.
+- not required - do the extra credit instead - implement mongoose - Populate your application's collections with sample data illustrating the use case of the collections. You must include at least five sample documents per collection.
     Note: Double-check this requirement before submission. Testing your delete routes may leave you under the requirement. To be safe, populate your collections with sample data well above the requirement (we recommend 10-20 documents). (5%)
 
 - Utilize reasonable code organization practices. (5%)
