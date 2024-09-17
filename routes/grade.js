@@ -5,10 +5,13 @@ import { ObjectId } from 'mongodb';
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-  const results = await Grade.find({}).limit(5)
-  console.log(results)
-  if (!results) res.send("Not found").status(404);
-  else res.send(results).status(200);
+  try { 
+    const results = await Grade.find({}).limit(5)
+    console.log(results)
+    res.send(results)
+  } catch(e) {
+    console.log(e)
+  }
 })
 
 router.post('/', async (req, res) => {
@@ -29,7 +32,7 @@ router.patch("/:id", async(req,res) => {
   try{ 
       const query = { _id: new ObjectId(req.params.id)};
       const updates = {
-       $set: { class_id: req.body } 
+       $push: { class_id: req.body } 
       }
       const result = Grade.updateOne(query, updates);
       res.send(result).status(200)

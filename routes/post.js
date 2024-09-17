@@ -6,9 +6,14 @@ import { ObjectId } from 'mongodb';
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-    const results = await Post.find({}).limit(5)
-    console.log(results)
-    res.send(results)
+    try {
+        const results = await Post.find({}).limit(5)
+        console.log(results)
+        res.send(results).status(200)
+    } catch(e) {
+        console.log(e)
+      }
+    
 })
 
 router.post('/', async (req, res) => {

@@ -7,18 +7,24 @@ const router = express.Router();
 
 //find a company by name - reaching line 11 but not findng the correct data 
 router.get('/:name', async (req, res) => {
+  try {
     let query = req.params.name;
     let result = await Company.findOne({query});
-    if (!result) res.send("Not found").status(404);
-    else res.send(result).status(200);
+    res.send(result).status(200);
+  } catch(e) {
+    console.log(e)
+  }
   })
 
 //get all company data - limit results to 5 documents
 router.get('/', async (req, res) => {
+  try {
     const results = await Company.find({}).limit(5)
     console.log(results)
-    if (!results) res.send("Not found").status(404);
-    else res.send(results).status(200);
+    res.send(results).status(200);
+  } catch(e) {
+    console.log(e)
+  }
   })
 
 //add a new company  
