@@ -25,12 +25,15 @@ your submission should include - A link to the GitHub repository for your projec
     - companies 
     - posts 
     - grades
+
 - Utilize reasonable data modeling practices. (10%)
     - done 
 
 - Create GET routes for all data that should be exposed to the client, using appropriate query commands to retrieve the data from the database. (10%)
+    done
 
 - Create POST routes for data, as appropriate, using appropriate insertion commands to add data to the database. At least one data collection should allow for client creation via a POST request. (10%)
+    done - post requests for all
 
 - Create PATCH or PUT routes for data, as appropriate, using appropriate update commands to change data in the database. At least one data collection should allow for client manipulation via a PATCH or PUT request. (10%)
 
@@ -43,11 +46,12 @@ Note: this may be accomplished in a number of ways. If you choose to perform thi
 
 - not required - do the extra credit instead - implement mongoose - Populate your application's collections with sample data illustrating the use case of the collections. You must include at least five sample documents per collection.
     Note: Double-check this requirement before submission. Testing your delete routes may leave you under the requirement. To be safe, populate your collections with sample data well above the requirement (we recommend 10-20 documents). (5%)
+        done?
 
 - Utilize reasonable code organization practices. (5%)
     done
 - Ensure that the program runs without errors (comment out things that do not work, and explain your blockers - you can still receive partial credit). (10%)
-
+    so far so good 
 - Commit frequently to the git repository. (5%)
     - done 
 - Include a README file that contains a description of your application.
