@@ -3,10 +3,15 @@
 Original instructions here (https://www.canva.com/design/DAFrigp0V5U/76Et4j_4KjlIyGSiv6gNsw/edit)
 
 # Introduction 
-This was a project created for an SBA for 
+This was a project created for an SBA for Per Scholas as practice working with mongodb, and mongoose as a backend 
 
 # Installation Instructions 
+This project runs using express, mongoose, dotemv, and nodemon -  to install all at once, run the folloing command in the terminal:
+    'npm i express mongoose dotenv'
+to utilize nodemon run the following command in the terminal: 
+    'nodemon'
 
+to test/run routes, I suggest using reqbin.com (https://reqbin.com/)
 
 -------------------------------------------------
 
@@ -36,6 +41,7 @@ your submission should include - A link to the GitHub repository for your projec
     done - post requests for all
 
 - Create PATCH or PUT routes for data, as appropriate, using appropriate update commands to change data in the database. At least one data collection should allow for client manipulation via a PATCH or PUT request. (10%)
+    DONE - can update body of posts using the id to query
 
 - Create DELETE routes for data, as appropriate, using appropriate delete commands to remove data from the database. At least one data collection should allow for client deletion via a DELETE request. (10%)
     done - delete for all routes 
